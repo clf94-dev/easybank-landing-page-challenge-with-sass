@@ -4,12 +4,19 @@
   box-sizing: border-box;
 }
 
+#navbar {
+  z-index: 5;
+}
+
 nav {
+  z-index: 5;
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
+  background-color: nav white;
   font-family: "Public Sans", sans-serif;
+  overflow: hidden;
 }
 
 nav .burger {
@@ -25,6 +32,7 @@ nav .burger div {
 }
 
 .nav-links {
+  z-index: 5;
   display: flex;
   justify-content: space-around;
   width: 60%;
@@ -62,6 +70,9 @@ nav .burger div {
   body {
     overflow-x: hidden;
   }
+  nav {
+    overflow: hidden;
+  }
   nav .burger {
     display: block;
   }
@@ -69,6 +80,7 @@ nav .burger div {
     background-image: linear-gradient(90deg, #2bb7da, #31d35c);
   }
   .nav-links {
+    overflow: hidden;
     position: absolute;
     right: 0px;
     height: 92vh;
@@ -126,4 +138,68 @@ nav .burger div {
 
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.mockup-im {
+  position: relative;
+  top: -15%;
+  width: 100%;
+  z-index: 3;
+}
+
+#body {
+  overflow: hidden;
+}
+
+#top {
+  overflow-x: hidden;
+}
+
+#top .top-row {
+  text-align: center;
+  width: 100%;
+  height: 710px;
+  overflow: hidden;
+}
+
+#top .top-row .top-col-text {
+  padding: 8% 5%;
+}
+
+#top .top-row .top-col-text .btn {
+  background-image: linear-gradient(90deg, #31d35c, #2bb7da);
+}
+
+@media screen and (max-width: 768px) {
+  #top .top-row {
+    height: 100%;
+  }
+  #top .top-row .top-col-text {
+    padding: 10% 10% 30% 10%;
+  }
+}
+
+.back-im {
+  position: absolute;
+  top: -15%;
+  right: -20%;
+  width: 80%;
+  z-index: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .back-im {
+    position: absolute;
+    top: 70%;
+    left: 0%;
+    width: 100%;
+  }
+}
+
+#features {
+  margin-top: -8%;
+  padding-top: 10%;
+  background-color: #f3f4f6;
+  z-index: 2;
+  overflow: hidden;
 }
