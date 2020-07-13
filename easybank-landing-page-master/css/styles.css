@@ -156,7 +156,7 @@ nav .burger div {
 }
 
 #top .top-row {
-  text-align: center;
+  text-align: left;
   width: 100%;
   height: 710px;
   overflow: hidden;
@@ -166,8 +166,32 @@ nav .burger div {
   padding: 8% 5%;
 }
 
+#top .top-row .top-col-text h1 {
+  font-family: "Public Sans", sans-serif;
+  font-size: 55px;
+  font-weight: 400;
+  padding-bottom: 3%;
+  padding-right: 10%;
+}
+
+#top .top-row .top-col-text h4 {
+  font-family: "Public Sans", sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  padding: 1% 0 7% 0;
+}
+
 #top .top-row .top-col-text .btn {
+  color: white;
   background-image: linear-gradient(90deg, #31d35c, #2bb7da);
+  border-radius: 25px;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 700;
+  padding: auto 10%;
+}
+
+#top .top-row .top-col-text .btn:hover {
+  opacity: 0.5;
 }
 
 @media screen and (max-width: 768px) {
@@ -202,4 +226,38 @@ nav .burger div {
   background-color: #f3f4f6;
   z-index: 2;
   overflow: hidden;
+}
+
+#features .feat-cont {
+  padding: 3% 5%;
+}
+
+#features .feat-cont h3 {
+  font-family: "Public Sans", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+#features .feat-cont h4 {
+  font-family: "Public Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: #9698a6;
+  line-height: 1.5rem;
+  padding: 1% 50% 3% 0;
+}
+
+#features .feat-cont .features-row .feat-col h3 {
+  font-family: "Public Sans", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  padding-top: 5%;
+}
+
+#features .feat-cont .features-row .feat-col h5 {
+  font-family: "Public Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #9698a6;
+  padding: 3% 0 5% 0;
 }
