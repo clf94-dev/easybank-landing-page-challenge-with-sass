@@ -268,18 +268,129 @@ nav .burger div {
   }
 }
 
-.articles-cont {
+#articles {
+  background-color: #fafafa;
+}
+
+#articles .articles-cont {
   padding: 7% 5%;
 }
 
-.articles-cont .row-article .art-col {
+#articles .articles-cont h3 {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+}
+
+#articles .articles-cont .row-article .art-col {
+  background-color: white;
   padding: 2% 2% 0 1%;
 }
 
-.articles-cont .row-article .art-col .currency-im {
-  height: 48%;
+#articles .articles-cont .row-article .art-col h6 {
+  font-family: "Public Sans", sans-serif;
+  color: #9698a6;
+  font-weight: 300;
+  padding: 5% 7% 2% 5%;
 }
 
-.articles-cont .row-article .art-col .art-im {
+#articles .articles-cont .row-article .art-col h4 {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  padding: 0 5% 2% 5%;
+}
+
+#articles .articles-cont .row-article .art-col h4:hover {
+  color: #31d35c;
+}
+
+#articles .articles-cont .row-article .art-col h5 {
+  font-family: "Public Sans", sans-serif;
+  color: #9698a6;
+  font-weight: 300;
+  padding: 0 5% 2% 5%;
+}
+
+#articles .articles-cont .row-article .art-col .currency-im {
+  height: 42%;
+}
+
+#articles .articles-cont .row-article .art-col .art-im {
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .articles-cont {
+    padding: 7% 5%;
+  }
+  .articles-cont .row-article .art-col {
+    padding: 5% 2% 5% 1%;
+  }
+  .articles-cont .row-article .currency-col {
+    height: 80%;
+  }
+}
+
+#footer {
+  padding: 3% 5%;
+  background-color: #2d314d;
+}
+
+#footer .col-lg-3 .logo {
+  stroke: white !important;
+  fill: white;
+}
+
+#footer .col-lg-3 .row .fas-footer {
+  color: white;
+  padding: 7% 1%;
+}
+
+#footer .col-lg-3 .row .fas-footer:hover {
+  color: #2bb7da;
+}
+
+#footer .col-lg-3 h5 {
+  color: white;
+  font-weight: 300;
+}
+
+#footer .col-lg-3 h5:hover {
+  color: #2bb7da;
+}
+
+#footer .col-lg-3 button {
+  margin-bottom: 10%;
+  border-radius: 25px;
+  font-family: "Public Sans", sans-serif;
+  font-size: 18px;
+  color: white;
+  background-color: white;
+  background-image: linear-gradient(to right, #31d35c, #2bb7da);
+}
+
+#footer .col-lg-3 button:hover {
+  opacity: 0.7;
+}
+
+#footer .col-lg-3 h6 {
+  color: white;
+  font-weight: 300;
+}
+
+#footer .col-btn {
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  #footer {
+    text-align: center;
+  }
+  #footer .col-lg-3 .row {
+    margin-left: 40%;
+  }
+  #footer .col-btn {
+    padding: 3% 0;
+    text-align: center;
+  }
 }
